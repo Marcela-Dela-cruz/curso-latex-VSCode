@@ -1,0 +1,97 @@
+# Instalación de LaTeX en Linux (TeX Live)
+
+## Objetivo
+
+Al finalizar esta sección, el estudiante será capaz de:
+
+* Instalar correctamente TeX Live en Linux
+* Identificar el gestor de paquetes según su distribución
+* Verificar que LaTeX funciona desde la terminal
+
+---
+
+## 1. ¿Por qué TeX Live en Linux?
+
+TeX Live es la distribución LaTeX más utilizada en sistemas Linux y en servidores académicos. Sus ventajas incluyen:
+
+* Alta estabilidad
+* Gran compatibilidad con paquetes académicos
+* Uso extendido en universidades y centros de investigación
+
+Por estas razones, es la opción recomendada para este curso en Linux.
+
+---
+
+## 2. Requisitos previos
+
+Antes de instalar TeX Live, verifica:
+
+* Tener permisos de administrador (sudo)
+* Conexión a internet estable
+* Al menos **4–6 GB de espacio libre** en disco
+
+---
+
+## 3. Instalación en distribuciones basadas en Debian / Ubuntu
+
+En la terminal, ejecuta:
+
+```bash
+sudo apt update
+sudo apt install texlive-full
+```
+
+> Nota: `texlive-full` instala todos los paquetes disponibles. Es la opción más segura para evitar errores por paquetes faltantes.
+
+---
+
+## 4. Instalación en Fedora
+
+En Fedora, utiliza:
+
+```bash
+sudo dnf install texlive-scheme-full
+```
+
+---
+
+## 5. Instalación en Arch Linux
+
+En Arch Linux:
+
+```bash
+sudo pacman -S texlive-most texlive-lang
+```
+
+---
+
+## 6. Verificación de la instalación
+
+Una vez finalizada la instalación, ejecuta:
+
+```bash
+pdflatex --version
+```
+
+Si el comando devuelve información de versión, LaTeX está instalado correctamente.
+
+---
+
+## 7. Problemas comunes en Linux
+
+* Instalación parcial de paquetes
+* Espacio insuficiente en disco
+* Comando `pdflatex` no encontrado en el PATH
+
+En la mayoría de los casos, instalar el esquema completo soluciona estos problemas.
+
+---
+
+## Actividad práctica
+
+1. Identifica tu distribución de Linux.
+2. Instala TeX Live con el comando correspondiente.
+3. Verifica la instalación desde la terminal.
+4. Documenta cualquier error encontrado.
+
+Esta instalación será utilizada durante todo el curso.
