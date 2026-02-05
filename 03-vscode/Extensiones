@@ -1,0 +1,94 @@
+# Extensiones para trabajar con LaTeX en VS Code
+
+## Objetivo de la sesión
+
+Al finalizar esta sesión, el estudiante será capaz de:
+
+* Comprender qué son las extensiones en VS Code
+* Instalar y configurar la extensión **LaTeX Workshop**
+* Utilizar funciones básicas para compilar y visualizar documentos LaTeX
+
+---
+
+## 1. ¿Qué son las extensiones en VS Code?
+
+Las extensiones son complementos que amplían las funciones de Visual Studio Code. Permiten adaptar el editor a distintas tareas, como programación, análisis de datos o edición de documentos LaTeX.
+
+Para trabajar cómodamente con LaTeX, es necesario instalar extensiones específicas.
+
+---
+
+## 2. Extensión principal: LaTeX Workshop
+
+**LaTeX Workshop** es la extensión más utilizada para trabajar con LaTeX en VS Code. Proporciona:
+
+* Compilación automática de documentos `.tex`
+* Vista previa del PDF dentro de VS Code
+* Autocompletado de comandos LaTeX
+* Navegación entre el código y el PDF
+* Manejo de bibliografías
+
+Por estas razones, será la extensión central de este curso.
+
+---
+
+## 3. Instalación de LaTeX Workshop
+
+### Pasos
+
+1. Abre VS Code
+2. Dirígete al panel de **Extensions** (icono de cuadrados)
+3. En la barra de búsqueda escribe:
+
+   ```
+   LaTeX Workshop
+   ```
+4. Selecciona la extensión desarrollada por **James Yu**
+5. Haz clic en **Install**
+
+Una vez instalada, VS Code estará listo para trabajar con archivos LaTeX.
+
+---
+
+## 4. Otras extensiones recomendadas
+
+Aunque no son obligatorias, las siguientes extensiones pueden mejorar la experiencia:
+
+* **PDF Viewer** (integrado en LaTeX Workshop)
+* **GitLens** → para seguimiento de cambios en Git
+* **Markdown Preview Enhanced** → útil para archivos `.md`
+
+Estas extensiones no afectan la compilación de LaTeX.
+
+---
+
+## 5. Primer contacto con LaTeX Workshop
+
+Al abrir un archivo con extensión `.tex`, LaTeX Workshop:
+
+* Reconoce automáticamente el archivo como LaTeX
+* Habilita comandos específicos
+* Permite compilar usando el botón **Build LaTeX project**
+
+El PDF generado se mostrará en una pestaña dentro de VS Code.
+
+---
+
+## 6. Problemas comunes
+
+* La extensión no detecta LaTeX instalado
+* Error al compilar
+* El PDF no se actualiza
+
+Estos problemas suelen resolverse revisando la instalación de LaTeX o la configuración del editor.
+
+---
+
+## Actividad práctica
+
+1. Instala la extensión LaTeX Workshop.
+2. Abre un archivo `.tex` de ejemplo.
+3. Compila el documento usando la extensión.
+4. Verifica que el PDF se visualice correctamente.
+
+Esta extensión será utilizada en todas las sesiones prácticas del curso.
