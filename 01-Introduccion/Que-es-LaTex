@@ -1,0 +1,77 @@
+# ¿Qué es LaTeX?
+
+## Objetivo de la sesión
+
+Al finalizar esta sesión, el estudiante será capaz de:
+
+* Comprender qué es LaTeX y para qué se utiliza
+* Identificar las diferencias entre LaTeX y los procesadores de texto tradicionales
+* Reconocer en qué contextos académicos y profesionales es más conveniente usar LaTeX
+
+---
+
+## 1. ¿Qué es LaTeX?
+
+LaTeX es un **sistema de preparación de documentos** utilizado principalmente en el ámbito académico y científico. A diferencia de programas como Microsoft Word o Google Docs, en LaTeX **no se escribe directamente el formato**, sino el contenido acompañado de instrucciones.
+
+En términos simples:
+
+> En LaTeX tú escribes *qué es* el contenido, y el sistema decide *cómo se ve*.
+
+LaTeX se basa en un lenguaje llamado **TeX**, creado por Donald Knuth en 1978, y fue diseñado para producir documentos de alta calidad tipográfica, especialmente aquellos que contienen **ecuaciones matemáticas, tablas complejas y referencias bibliográficas**.
+
+---
+
+## 2. ¿Para qué se usa LaTeX?
+
+LaTeX se utiliza ampliamente en:
+
+* Artículos científicos
+* Tesis y trabajos de titulación
+* Reportes técnicos
+* Libros académicos
+* Documentación matemática, física, química e ingeniería
+
+Muchas revistas científicas y universidades **exigen o recomiendan** el uso de LaTeX debido a la consistencia y calidad del formato.
+
+---
+
+## 3. LaTeX vs procesadores de texto tradicionales
+
+| Procesadores de texto       | LaTeX                     |
+| --------------------------- | ------------------------- |
+| Edición visual (WYSIWYG)    | Edición basada en código  |
+| Formato manual              | Formato automático        |
+| Problemas al mover imágenes | Manejo estable de figuras |
+| Referencias manuales        | Referencias automáticas   |
+| Cambios de formato tediosos | Cambios globales simples  |
+
+Un error común es pensar que LaTeX es "más difícil"; en realidad, **requiere una curva inicial**, pero a largo plazo ahorra tiempo y errores.
+
+---
+
+## 4. ¿Por qué aprender LaTeX?
+
+Aprender LaTeX desde etapas tempranas de la formación universitaria permite:
+
+* Mejorar la presentación de trabajos académicos
+* Prepararse para tesis y posgrados
+* Reducir errores de formato
+* Trabajar con estándares académicos reales
+
+Además, LaTeX es una herramienta **gratuita**, multiplataforma y ampliamente utilizada a nivel internacional.
+
+---
+
+## 5. Mitos comunes sobre LaTeX
+
+* "Es solo para matemáticos" ❌
+* "Es muy complicado" ❌
+* "No sirve para textos largos" ❌
+
+LaTeX puede usarse para documentos simples o complejos, y una vez dominadas las bases, se vuelve una herramienta muy poderosa.
+
+
+
+
+

@@ -1,0 +1,117 @@
+# Instalación de LaTeX
+
+## Objetivo de la sesión
+
+Al finalizar esta sesión, el estudiante será capaz de:
+
+* Identificar qué es una distribución LaTeX
+* Elegir la distribución adecuada según su sistema operativo
+* Verificar que LaTeX quedó correctamente instalado
+
+---
+
+## 1. ¿Qué es una distribución LaTeX?
+
+LaTeX no es un programa único, sino un conjunto de herramientas. Una **distribución LaTeX** incluye:
+
+* El compilador LaTeX
+* Paquetes y bibliotecas
+* Herramientas para generar PDF
+
+Las distribuciones más comunes son:
+
+* **MiKTeX** (Windows)
+* **TeX Live** (Windows, macOS y Linux)
+* **MacTeX** (macOS)
+
+---
+
+## 2. Recomendación general para el curso
+
+Para este curso se recomienda:
+
+* **Windows:** MiKTeX
+* **macOS:** MacTeX
+* **Linux:** TeX Live
+
+Estas opciones son gratuitas, estables y ampliamente usadas en el ámbito académico.
+
+---
+
+## 3. Instalación en Windows (MiKTeX)
+
+### Pasos generales
+
+1. Descargar MiKTeX desde su sitio oficial
+2. Ejecutar el instalador
+3. Seleccionar instalación para "todos los usuarios" (recomendado)
+4. Aceptar la instalación automática de paquetes
+5. Finalizar la instalación
+
+### Verificación
+
+Abrir la terminal y escribir:
+
+```bash
+pdflatex --version
+```
+
+Si aparece información de versión, LaTeX está instalado correctamente.
+
+---
+
+## 4. Instalación en macOS (MacTeX)
+
+### Pasos generales
+
+1. Descargar MacTeX
+2. Ejecutar el archivo `.pkg`
+3. Seguir el asistente de instalación
+
+> Nota: MacTeX ocupa varios GB de espacio.
+
+### Verificación
+
+En la terminal:
+
+```bash
+pdflatex --version
+```
+
+---
+
+## 5. Instalación en Linux (TeX Live)
+
+### Instalación rápida
+
+En distribuciones basadas en Debian/Ubuntu:
+
+```bash
+sudo apt install texlive-full
+```
+
+### Verificación
+
+```bash
+pdflatex --version
+```
+
+---
+
+## 6. Problemas comunes
+
+* Instalación incompleta
+* Falta de paquetes
+* Comando `pdflatex` no reconocido
+
+La mayoría de estos problemas se resolverán durante la configuración de VS Code en la siguiente sesión.
+
+---
+
+## Actividad de cierre
+
+1. Instala LaTeX según tu sistema operativo.
+2. Verifica la instalación usando la terminal.
+3. Anota cualquier error o duda para la siguiente sesión.
+
+Esta instalación será utilizada durante todo el curso.
