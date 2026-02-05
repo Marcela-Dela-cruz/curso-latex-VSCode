@@ -1,0 +1,187 @@
+# Estructura básica de un documento LaTeX
+
+## Objetivo de la sesión
+
+Que el estudiante comprenda la estructura fundamental de un documento LaTeX, identifique sus partes y entienda para qué sirve cada una.
+
+---
+
+## Idea central
+
+Todo documento LaTeX tiene **dos grandes partes**:
+
+1. **Preámbulo** → donde se configura el documento
+2. **Cuerpo del documento** → donde se escribe el contenido
+
+Si esta estructura no se respeta, el documento no compila.
+
+---
+
+## Esqueleto mínimo de un documento LaTeX
+
+```latex
+\documentclass{article}
+
+% Aquí va el preámbulo
+
+\begin{document}
+
+% Aquí va el contenido
+
+\end{document}
+```
+
+Este es el punto de partida de cualquier documento en LaTeX.
+
+---
+
+## 1. \documentclass
+
+Define el tipo de documento que se va a crear.
+
+Ejemplos comunes:
+
+```latex
+\documentclass{article}
+\documentclass{report}
+\documentclass{book}
+```
+
+Opciones frecuentes:
+
+```latex
+\documentclass[12pt]{article}
+\documentclass[a4paper,11pt]{report}
+```
+
+Controla:
+
+* Tamaño de letra
+* Formato general
+* Estructura del documento
+
+---
+
+## 2. El preámbulo
+
+El preámbulo es todo lo que está **antes** de `\begin{document}`.
+
+Aquí se colocan:
+
+* Paquetes
+* Configuración de idioma
+* Márgenes
+* Tipografía
+* Información del documento
+
+Ejemplo:
+
+```latex
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+```
+
+---
+
+## 3. \begin{document}
+
+Marca el inicio del contenido visible del documento.
+
+Todo lo que esté antes **no aparece** en el PDF.
+
+Si falta esta línea, LaTeX no puede compilar.
+
+---
+
+## 4. El cuerpo del documento
+
+Aquí se escribe:
+
+* Texto
+* Secciones
+* Figuras
+* Tablas
+* Ecuaciones
+
+Ejemplo:
+
+```latex
+Este es un texto en LaTeX.
+
+Aquí comienza el contenido real del documento.
+```
+
+---
+
+## 5. \end{document}
+
+Indica el final del documento.
+
+Todo lo que se escriba después será ignorado.
+
+Es obligatorio cerrar el documento correctamente.
+
+---
+
+## Comentarios en LaTeX
+
+Los comentarios se escriben con el símbolo `%`.
+
+```latex
+% Esto es un comentario
+```
+
+No aparecen en el PDF y sirven para explicar el código.
+
+---
+
+## Ejemplo completo comentado
+
+```latex
+\documentclass[12pt]{article} % Tipo de documento
+
+\usepackage[spanish]{babel}  % Idioma
+\usepackage[utf8]{inputenc}  % Codificación
+
+\begin{document}             % Inicio del documento
+
+Hola mundo.
+
+Este es un documento con estructura básica.
+
+\end{document}               % Fin del documento
+```
+
+---
+
+## Errores comunes
+
+* Olvidar `\begin{document}`
+* No cerrar con `\end{document}`
+* Escribir texto antes del inicio del documento
+* Confundir preámbulo con contenido
+
+---
+
+## Actividad práctica
+
+1. Crear un archivo `estructura.tex`
+2. Copiar el ejemplo completo
+3. Compilar el documento
+4. Identificar visualmente:
+
+   * preámbulo
+   * inicio del documento
+   * contenido
+
+---
+
+## Resultado esperado
+
+El estudiante será capaz de:
+
+* Reconocer la estructura de cualquier documento LaTeX
+* Entender para qué sirve cada parte
+* Evitar errores estructurales básicos
