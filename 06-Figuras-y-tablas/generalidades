@@ -1,0 +1,152 @@
+# Figuras y tablas en LaTeX
+
+## Objetivo de la sesión
+
+Que el estudiante aprenda a insertar, referenciar y posicionar figuras y tablas en LaTeX de forma correcta y profesional.
+
+---
+
+## Idea central
+
+En LaTeX, las figuras y tablas son **elementos flotantes**. Esto significa que LaTeX decide automáticamente la mejor posición para mantener un buen diseño del documento.
+
+---
+
+## 1. Paquetes necesarios
+
+Para trabajar con figuras se utiliza el paquete `graphicx`.
+
+En el preámbulo del documento agregar:
+
+```latex
+\usepackage{graphicx}
+```
+
+Para tablas básicas no se requiere paquete adicional.
+
+---
+
+## 2. Insertar una figura
+
+Estructura básica:
+
+```latex
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imagenes/ejemplo.png}
+  \caption{Ejemplo de figura en LaTeX}
+  \label{fig:ejemplo}
+\end{figure}
+```
+
+Elementos importantes:
+
+* `figure` → entorno de figura
+* `[h]` → sugerencia de posición (here)
+* `\includegraphics` → inserta la imagen
+* `\caption` → título de la figura
+* `\label` → identificador para referencias
+
+---
+
+## 3. Ruta de las imágenes
+
+Es recomendable organizar las imágenes en una carpeta, por ejemplo:
+
+```
+imagenes/
+  figura1.png
+  figura2.jpg
+```
+
+Y llamarlas desde LaTeX usando la ruta relativa.
+
+---
+
+## 4. Referenciar una figura en el texto
+
+Nunca se debe escribir "la figura de arriba".
+
+Forma correcta:
+
+```latex
+Como se observa en la Figura~\ref{fig:ejemplo}, ...
+```
+
+La numeración se genera automáticamente.
+
+---
+
+## 5. Insertar una tabla
+
+Estructura básica:
+
+```latex
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l c r}
+    \hline
+    Columna 1 & Columna 2 & Columna 3 \\
+    \hline
+    Dato A & 10 & 20 \\
+    Dato B & 15 & 30 \\
+    \hline
+  \end{tabular}
+  \caption{Ejemplo de tabla en LaTeX}
+  \label{tab:ejemplo}
+\end{table}
+```
+
+---
+
+## 6. Alineación en tablas
+
+En el entorno `tabular`:
+
+* `l` → alineado a la izquierda
+* `c` → centrado
+* `r` → alineado a la derecha
+
+Ejemplo:
+
+```latex
+\begin{tabular}{c c c}
+```
+
+---
+
+## 7. Referenciar una tabla
+
+```latex
+Como se muestra en la Tabla~\ref{tab:ejemplo}, ...
+```
+
+---
+
+## Errores comunes
+
+* Olvidar el paquete `graphicx`
+* No usar `\caption`
+* Escribir referencias manuales
+* Colocar imágenes fuera del entorno `figure`
+
+---
+
+## Actividad práctica
+
+1. Crear una carpeta llamada `imagenes`
+2. Agregar una imagen cualquiera
+3. Insertar una figura con título y referencia
+4. Crear una tabla con al menos 3 columnas
+5. Referenciar la tabla y la figura en el texto
+
+---
+
+## Resultado esperado
+
+El estudiante será capaz de:
+
+* Insertar figuras correctamente
+* Crear tablas básicas
+* Referenciar figuras y tablas
+* Comprender el concepto de elementos flotantes
