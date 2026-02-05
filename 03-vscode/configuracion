@@ -1,0 +1,137 @@
+# Configuración de VS Code para trabajar con LaTeX
+
+## Objetivo de la sesión
+
+Configurar Visual Studio Code para compilar documentos LaTeX correctamente, visualizar el PDF en tiempo real y evitar errores comunes al iniciar.
+
+---
+
+## Requisitos previos
+
+Antes de continuar, el estudiante debe tener:
+
+* Visual Studio Code instalado
+* Una distribución LaTeX instalada:
+
+  * **Windows:** MiKTeX o TeX Live
+  * **macOS:** MacTeX
+  * **Linux:** TeX Live
+* La extensión **LaTeX Workshop** instalada
+
+---
+
+## Abrir la configuración en VS Code
+
+1. Abrir VS Code
+2. Ir al menú **File → Preferences → Settings**
+3. En la barra de búsqueda escribir: `latex`
+
+La mayoría de las configuraciones necesarias ya vienen listas por defecto.
+
+---
+
+## Compilación automática
+
+LaTeX Workshop permite compilar el documento automáticamente al guardar.
+
+Verificar que esté activada la opción:
+
+* `LaTeX Workshop › Latex › Auto Build: On Save`
+
+Si no está activa:
+
+1. Buscar `auto build`
+2. Activar **On Save**
+
+---
+
+## Visor de PDF integrado
+
+Una de las ventajas de VS Code es que permite ver el PDF sin salir del editor.
+
+Configuración recomendada:
+
+* `LaTeX Workshop › View › PDF Viewer: tab`
+
+Esto abre el PDF como una pestaña dentro de VS Code.
+
+---
+
+## Crear el primer archivo LaTeX
+
+1. Crear un archivo llamado `main.tex`
+2. Copiar el siguiente contenido:
+
+```latex
+\documentclass{article}
+\begin{document}
+Hola mundo en LaTeX
+\end{document}
+```
+
+3. Guardar el archivo (`Ctrl + S`)
+
+Si todo está correctamente configurado:
+
+* Se generará automáticamente un PDF
+* El PDF se abrirá en una pestaña lateral
+
+---
+
+## Compilación manual
+
+Si no se compila automáticamente:
+
+* Presionar `Ctrl + Alt + B`
+* O hacer clic en el botón **Build LaTeX project**
+
+---
+
+## Archivos que se generan
+
+Al compilar, LaTeX genera varios archivos auxiliares:
+
+* `.aux`
+* `.log`
+* `.out`
+* `.pdf`
+
+Solo el archivo `.tex` es el que se edita manualmente.
+
+---
+
+## Errores comunes y soluciones
+
+### No se genera el PDF
+
+* Revisar que la distribución LaTeX esté instalada
+* Ver la pestaña **LaTeX Workshop → Logs**
+
+### Aparece el PDF pero no se actualiza
+
+* Guardar el archivo nuevamente
+* Usar compilación manual
+
+### Aparece otro nombre como autor del commit
+
+* Cerrar sesión de GitHub en VS Code
+* Volver a iniciar sesión con la cuenta correcta
+
+---
+
+## Actividad práctica
+
+1. Crear un archivo `main.tex`
+2. Escribir el documento mínimo
+3. Compilar y verificar que se genere el PDF
+4. Cambiar el texto y observar la actualización automática
+
+---
+
+## Resultado esperado
+
+Al finalizar esta sesión, el estudiante será capaz de:
+
+* Compilar documentos LaTeX desde VS Code
+* Visualizar el PDF integrado
+* Identificar errores básicos de compilación

@@ -1,0 +1,140 @@
+# Mini práctica guiada
+
+## Primer documento LaTeX en VS Code
+
+---
+
+## Objetivo de la práctica
+
+Que el estudiante sea capaz de crear, compilar y modificar un documento LaTeX básico en Visual Studio Code, entendiendo cada parte del código.
+
+---
+
+## Contexto didáctico
+
+Esta práctica se realiza después de:
+
+* Instalar VS Code
+* Instalar una distribución LaTeX
+* Configurar la extensión LaTeX Workshop
+
+No se requieren conocimientos previos de LaTeX.
+
+---
+
+## Paso 1. Crear el archivo principal
+
+1. Abrir la carpeta del proyecto en VS Code
+2. Crear un archivo nuevo llamado:
+
+```
+main.tex
+```
+
+Este será el archivo principal del documento.
+
+---
+
+## Paso 2. Escribir el documento mínimo
+
+Copiar exactamente el siguiente código dentro de `main.tex`:
+
+```latex
+\documentclass[12pt]{article}
+
+\begin{document}
+
+Hola mundo.
+
+Este es mi primer documento en LaTeX usando Visual Studio Code.
+
+\end{document}
+```
+
+---
+
+## Paso 3. Compilar el documento
+
+1. Guardar el archivo (`Ctrl + S`)
+2. Esperar a que LaTeX Workshop compile automáticamente
+
+Si no ocurre:
+
+* Presionar `Ctrl + Alt + B`
+
+---
+
+## Paso 4. Verificar el PDF
+
+* Se abrirá una pestaña con el archivo PDF
+* Verificar que el texto coincida con lo escrito en el código
+
+Si aparece el PDF, la configuración es correcta.
+
+---
+
+## Paso 5. Modificar el contenido
+
+Cambiar el texto dentro del documento por el siguiente:
+
+```latex
+Hola mundo.
+
+Mi nombre es __________.
+
+Este documento fue creado como parte de una práctica guiada de LaTeX.
+```
+
+Guardar el archivo y observar cómo el PDF se actualiza automáticamente.
+
+---
+
+## Paso 6. Agregar un título simple
+
+Modificar el código para que quede así:
+
+```latex
+\documentclass[12pt]{article}
+
+\title{Mi primer documento en LaTeX}
+\author{Nombre del estudiante}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Este es mi primer documento en LaTeX usando Visual Studio Code.
+
+\end{document}
+```
+
+---
+
+## Paso 7. Observación guiada
+
+## Errores comunes durante la práctica
+
+* Olvidar una diagonal inversa (`\`)
+* No guardar el archivo antes de compilar
+* Escribir comandos fuera del entorno `document`
+
+---
+
+## Producto final esperado
+
+Un archivo `main.tex` que:
+
+* Compile sin errores
+* Genere un PDF
+* Contenga título, autor y texto
+
+---
+
+## Cierre de la práctica
+
+Al finalizar esta actividad, el estudiante habrá comprobado que:
+
+* LaTeX funciona por comandos
+* VS Code facilita la compilación
+* El PDF se genera automáticamente a partir del código

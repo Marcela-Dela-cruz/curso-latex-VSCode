@@ -1,0 +1,76 @@
+# Uso de LaTeX en Visual Studio Code
+
+## Objetivo de la sesión
+
+Al finalizar esta sesión, el estudiante será capaz de:
+
+* Comprender qué es Visual Studio Code y por qué se usa con LaTeX
+* Instalar VS Code en su sistema operativo
+* Preparar el entorno para trabajar con documentos LaTeX
+
+---
+
+## 1. ¿Qué es Visual Studio Code?
+
+Visual Studio Code (VS Code) es un **editor de código fuente** desarrollado por Microsoft. Es gratuito, multiplataforma y ampliamente utilizado en programación, ciencia de datos y documentación técnica.
+
+Aunque no es exclusivo para LaTeX, VS Code se ha convertido en una de las mejores opciones para escribir documentos LaTeX debido a su flexibilidad y gran cantidad de extensiones.
+
+---
+
+## 2. ¿Por qué usar VS Code para LaTeX?
+
+VS Code ofrece ventajas importantes:
+
+* Edición de texto clara y ordenada
+* Resaltado de sintaxis
+* Autocompletado de comandos
+* Integración con Git y GitHub
+* Vista previa del PDF
+
+Estas características hacen que el flujo de trabajo con LaTeX sea más eficiente que en editores tradicionales.
+
+---
+
+## 3. Requisitos previos
+
+Antes de continuar, asegúrate de tener:
+
+* Una distribución LaTeX instalada (MiKTeX, MacTeX o TeX Live)
+* Acceso a internet
+* Permisos para instalar software
+
+---
+
+## 4. Instalación de VS Code
+
+1. Abre tu navegador web
+2. Busca **Visual Studio Code download**
+3. Entra al sitio oficial
+4. Descarga la versión correspondiente a tu sistema operativo
+5. Ejecuta el instalador y acepta las opciones por defecto
+
+VS Code se instalará en pocos minutos.
+
+---
+
+## 5. Primer vistazo a la interfaz
+
+Al abrir VS Code encontrarás:
+
+* Barra lateral izquierda (explorador de archivos)
+* Área central de edición
+* Barra inferior (estado y terminal)
+
+Estos elementos serán utilizados constantemente durante el curso.
+
+---
+
+## Actividad inicial
+
+1. Instala Visual Studio Code.
+2. Ábrelo por primera vez.
+3. Explora la interfaz durante unos minutos.
+4. Anota cualquier duda sobre el entorno.
+
+Esta herramienta será el editor principal durante todo el curso.

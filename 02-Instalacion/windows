@@ -1,0 +1,94 @@
+# Instalación de LaTeX en Windows (MiKTeX)
+
+## Objetivo
+
+Al finalizar esta sección, el estudiante será capaz de:
+
+* Instalar correctamente MiKTeX en Windows
+* Configurar opciones básicas recomendadas
+* Verificar que LaTeX funciona desde la terminal
+
+---
+
+## 1. ¿Por qué MiKTeX en Windows?
+
+MiKTeX es una distribución LaTeX diseñada especialmente para Windows. Sus principales ventajas son:
+
+* Instalación sencilla
+* Descarga automática de paquetes faltantes
+* Buena integración con editores como VS Code
+
+Por estas razones, es la distribución recomendada para este curso en sistemas Windows.
+
+---
+
+## 2. Descarga de MiKTeX
+
+1. Abre tu navegador web
+2. Busca **MiKTeX download**
+3. Entra al sitio oficial de MiKTeX
+4. Descarga la versión **Installer** para Windows
+
+> Nota: evita descargar MiKTeX desde sitios no oficiales.
+
+---
+
+## 3. Proceso de instalación
+
+Durante el instalador:
+
+1. Acepta la licencia
+2. Selecciona **Install for all users** (recomendado)
+3. Elige la carpeta de instalación por defecto
+4. En la opción de paquetes, selecciona:
+
+   * **Install missing packages on-the-fly: Yes**
+5. Finaliza la instalación
+
+Este proceso puede tardar varios minutos dependiendo de tu conexión a internet.
+
+---
+
+## 4. Configuración inicial recomendada
+
+Después de la instalación:
+
+1. Abre **MiKTeX Console**
+2. Ve a la sección **Updates**
+3. Verifica que no haya actualizaciones pendientes
+4. Aplica las actualizaciones si es necesario
+
+Esto evita errores comunes al compilar documentos.
+
+---
+
+## 5. Verificación de la instalación
+
+Abre la terminal (PowerShell o CMD) y escribe:
+
+```bash
+pdflatex --version
+```
+
+Si el comando devuelve información de versión, MiKTeX está correctamente instalado.
+
+---
+
+## 6. Problemas comunes en Windows
+
+* El comando `pdflatex` no se reconoce
+* Firewall bloquea descargas de paquetes
+* Instalación incompleta
+
+La mayoría de estos problemas se resolverán al configurar VS Code en la siguiente sesión.
+
+---
+
+## Actividad práctica
+
+1. Instala MiKTeX siguiendo los pasos indicados.
+2. Ejecuta el comando de verificación.
+3. Toma una captura del resultado.
+4. Anota cualquier error para discutirlo en clase.
+
+Esta instalación será utilizada durante todo el curso.

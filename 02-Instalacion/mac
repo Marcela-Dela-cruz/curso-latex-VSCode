@@ -1,0 +1,87 @@
+# Instalación de LaTeX en macOS (MacTeX)
+
+## Objetivo
+
+Al finalizar esta sección, el estudiante será capaz de:
+
+* Instalar correctamente MacTeX en macOS
+* Comprender el espacio y tiempo requeridos para la instalación
+* Verificar que LaTeX funciona desde la terminal
+
+---
+
+## 1. ¿Por qué MacTeX en macOS?
+
+MacTeX es la distribución oficial de LaTeX para macOS. Está basada en TeX Live y ofrece:
+
+* Instalación completa y estable
+* Compatibilidad total con paquetes académicos
+* Integración nativa con el sistema macOS
+
+Por estas razones, es la opción recomendada para este curso en equipos Apple.
+
+---
+
+## 2. Requisitos previos
+
+Antes de instalar MacTeX, verifica:
+
+* Tener al menos **6 GB de espacio libre** en disco
+* Conexión a internet estable
+* Permisos de administrador en el equipo
+
+---
+
+## 3. Descarga de MacTeX
+
+1. Abre tu navegador web
+2. Busca **MacTeX download**
+3. Entra al sitio oficial de MacTeX
+4. Descarga el archivo con extensión `.pkg`
+
+> Nota: la descarga puede tardar varios minutos debido al tamaño del archivo.
+
+---
+
+## 4. Proceso de instalación
+
+1. Abre el archivo `.pkg` descargado
+2. Sigue el asistente de instalación
+3. Acepta los términos de licencia
+4. Mantén las opciones por defecto
+5. Finaliza la instalación
+
+El proceso puede tardar entre 10 y 20 minutos dependiendo del equipo.
+
+---
+
+## 5. Verificación de la instalación
+
+Abre la **Terminal** y escribe:
+
+```bash
+pdflatex --version
+```
+
+Si aparece información de versión, MacTeX se instaló correctamente.
+
+---
+
+## 6. Problemas comunes en macOS
+
+* Instalación interrumpida
+* Falta de espacio en disco
+* Comando `pdflatex` no encontrado
+
+En la mayoría de los casos, reiniciar la computadora soluciona estos problemas.
+
+---
+
+## Actividad práctica
+
+1. Instala MacTeX siguiendo los pasos indicados.
+2. Ejecuta el comando de verificación.
+3. Anota el tiempo total de instalación.
+4. Registra cualquier problema encontrado.
+
+Esta instalación será utilizada durante todo el curso.
