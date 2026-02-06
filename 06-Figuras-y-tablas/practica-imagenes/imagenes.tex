@@ -1,8 +1,26 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+
+\begin{document}
+
+\section{Introducción}
+
+En este documento se muestra un ejemplo de cómo insertar una imagen en LaTeX.
+Como se observa en la Figura~\ref{fig:ejemplo}, la imagen se coloca con título y referencia automática.
+
+\section{Ejemplo de figura}
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.6\textwidth]{imagenes/practica.png}
-  \caption{Ejemplo de figura en LaTeX}
+  \caption{Ejemplo de imagen insertada en LaTeX}
   \label{fig:ejemplo}
 \end{figure}
+
+La imagen anterior fue insertada utilizando el entorno \texttt{figure} y el paquete \texttt{graphicx}.
+
+\end{document}

@@ -4,7 +4,7 @@
 Curso introductorio para estudiantes que desean aprender a usar LaTeX desde Visual Studio Code.
 
 ## Requisitos
-- Computadora
+instalar:
 - VS Code
 - Distribución LaTeX (TeX Live / MiKTeX)
 

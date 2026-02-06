@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{Introducción}
+En este documento se muestra un ejemplo de cómo crear una tabla en LaTeX.
+Como se observa en la Tabla~\ref{tab:ejemplo}, la tabla se coloca con título y referencia automática.
+
+\section{Ejemplo de tabla}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{l c r}
+    \hline
+    Columna 1 & Columna 2 & Columna 3 \\
+    \hline
+    Dato A & 10 & 20 \\
+    Dato B & 15 & 30 \\
+    \hline
+  \end{tabular}
+  \caption{Ejemplo de tabla en LaTeX}
+  \label{tab:ejemplo}
+\end{table}
+
+\end{document}
