@@ -1,0 +1,129 @@
+# Referencias y bibliografía en LaTeX
+
+## Objetivo de la sesión
+
+Que el estudiante aprenda a citar fuentes dentro del texto y a generar automáticamente una bibliografía utilizando BibTeX en LaTeX.
+
+---
+
+## Idea central
+
+En LaTeX, **las referencias no se escriben manualmente**. Se gestionan mediante un archivo externo (`.bib`), lo que asegura consistencia, numeración automática y formato académico.
+
+---
+
+## 1. ¿Qué es BibTeX?
+
+BibTeX es un sistema que permite:
+
+* Almacenar referencias en un archivo `.bib`
+* Citar fuentes dentro del documento
+* Generar la bibliografía automáticamente
+
+Esto es estándar en artículos científicos, tesis y reportes académicos.
+
+---
+
+## 2. Archivos necesarios
+
+Para trabajar con referencias se requieren al menos dos archivos:
+
+```
+main.tex
+bibliografia.bib
+```
+
+---
+
+## 3. Crear el archivo bibliografia.bib
+
+Ejemplo de una referencia tipo artículo científico:
+
+```bibtex
+@article{smith2020,
+  author  = {Smith, John and Doe, Jane},
+  title   = {Heavy Metal Concentrations in Coastal Lagoons},
+  journal = {Environmental Research},
+  year    = {2020},
+  volume  = {185},
+  pages   = {109400}
+}
+```
+
+---
+
+## 4. Citar dentro del documento
+
+Dentro del texto se utiliza el comando:
+
+```latex
+\cite{smith2020}
+```
+
+Ejemplo:
+
+```latex
+Diversos estudios han analizado la presencia de metales pesados en ecosistemas costeros \cite{smith2020}.
+```
+
+---
+
+## 5. Insertar la bibliografía en el documento
+
+Al final del documento agregar:
+
+```latex
+\bibliographystyle{plain}
+\bibliography{bibliografia}
+```
+
+El nombre debe coincidir con el archivo `.bib` (sin extensión).
+
+---
+
+## 6. Compilación correcta
+
+Para que las referencias aparezcan correctamente, LaTeX sigue este proceso:
+
+1. Compilar el documento
+2. Ejecutar BibTeX
+3. Compilar nuevamente (dos veces)
+
+LaTeX Workshop realiza este proceso automáticamente.
+
+---
+
+## 7. Tipos comunes de referencias
+
+* `@article` → artículos científicos
+* `@book` → libros
+* `@thesis` → tesis
+* `@misc` → documentos en línea
+
+---
+
+## Errores comunes
+
+* Olvidar agregar la bibliografía al final
+* Escribir mal la clave de la referencia
+* No recompilar después de citar
+
+---
+
+## Actividad práctica
+
+1. Crear un archivo `bibliografia.bib`
+2. Agregar al menos una referencia
+3. Citarla en el texto
+4. Compilar y verificar que aparezca la bibliografía
+
+---
+
+## Resultado esperado
+
+El estudiante será capaz de:
+
+* Crear y gestionar referencias con BibTeX
+* Citar fuentes correctamente
+* Generar una bibliografía automática
+* Aplicar buenas prácticas académicas

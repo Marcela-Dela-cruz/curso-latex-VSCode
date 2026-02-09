@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+
+% Paquetes necesarios
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section{Ecuaciones en LaTeX}
+
+\subsection{Ecuación en línea}
+La famosa relación entre energía y masa se expresa como $E = mc^2$,
+la cual es una de las ecuaciones más conocidas de la física.
+
+\subsection{Ecuación centrada sin numerar}
+
+\[
+E = mc^2
+\]
+
+\subsection{Ecuación numerada}
+
+\begin{equation}
+E = mc^2
+\label{eq:energia}
+\end{equation}
+
+Como se muestra en la ecuación~\ref{eq:energia}, la energía es proporcional
+a la masa y al cuadrado de la velocidad de la luz.
+
+\subsection{Fracciones, raíces y potencias}
+
+\begin{equation}
+E = \frac{1}{2}mv^2
+\label{eq:cinetica}
+\end{equation}
+
+La ecuación~\ref{eq:cinetica} representa la energía cinética de un cuerpo.
+
+\subsection{Ecuaciones de varias líneas}
+
+\begin{align}
+F &= ma \label{eq:newton} \\
+E &= mc^2
+\end{align}
+
+La ecuación~\ref{eq:newton} corresponde a la segunda ley de Newton.
+
+\end{document}

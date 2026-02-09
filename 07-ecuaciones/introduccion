@@ -1,0 +1,177 @@
+# Ecuaciones en LaTeX
+
+## Objetivo de la sesión
+
+Que el estudiante aprenda a escribir ecuaciones matemáticas en LaTeX, diferenciando entre ecuaciones en línea, ecuaciones centradas y ecuaciones numeradas.
+
+---
+
+## Idea central
+
+LaTeX fue diseñado originalmente para escribir matemáticas. Por eso, las ecuaciones en LaTeX son claras, consistentes y de calidad tipográfica profesional.
+
+---
+
+## 1. Modo matemático
+
+Para escribir matemáticas en LaTeX es necesario entrar en **modo matemático**.
+
+Existen dos formas principales:
+
+* **Modo en línea** → dentro del texto
+* **Modo desplegado** → ecuaciones centradas
+
+---
+
+## 2. Ecuaciones en línea
+
+Se escriben entre símbolos `$`.
+
+Ejemplo:
+
+```latex
+La ecuación $E = mc^2$ relaciona la energía y la masa.
+```
+
+La ecuación aparece integrada en el párrafo.
+
+---
+
+## 3. Ecuaciones centradas (sin numerar)
+
+Se utiliza el entorno `equation*` o `\[ \]`.
+
+Ejemplo:
+
+```latex
+\[
+E = mc^2
+\]
+```
+
+Esta ecuación aparece centrada y sin número.
+
+---
+
+## 4. Ecuaciones numeradas
+
+Para numerar ecuaciones se usa el entorno `equation`.
+
+Ejemplo:
+
+```latex
+\begin{equation}
+E = mc^2
+\end{equation}
+```
+
+La numeración se genera automáticamente.
+
+---
+
+## 5. Referenciar ecuaciones
+
+Al igual que figuras y tablas, las ecuaciones se pueden referenciar.
+
+Ejemplo:
+
+```latex
+\begin{equation}
+E = mc^2
+\label{eq:energia}
+\end{equation}
+```
+
+En el texto:
+
+```latex
+Como se muestra en la ecuación~\ref{eq:energia}, ...
+```
+
+---
+
+## 6. Símbolos matemáticos básicos
+
+Algunos símbolos comunes:
+
+```latex
++  -  =  \times  \div
+\alpha  \beta  \gamma
+\sum  \int
+\leq  \geq
+```
+
+Ejemplo:
+
+```latex
+\alpha + \beta \geq \gamma
+```
+
+---
+
+## 7. Fracciones, raíces y potencias
+
+```latex
+\frac{a}{b}
+\sqrt{x}
+ x^2
+```
+
+Ejemplo:
+
+```latex
+\frac{1}{2}mv^2
+```
+
+---
+
+## 8. Ecuaciones de varias líneas
+
+Para ecuaciones largas se usa el entorno `align` (requiere `amsmath`).
+
+En el preámbulo:
+
+```latex
+\usepackage{amsmath}
+```
+
+Ejemplo:
+
+```latex
+\begin{align}
+F &= ma \\
+E &= mc^2
+\end{align}
+```
+
+---
+
+## Errores comunes
+
+* Olvidar entrar en modo matemático
+* Usar espacios normales en ecuaciones
+* No cargar `amsmath` para ecuaciones avanzadas
+
+---
+
+## Actividad práctica
+
+1. Crear un archivo `ecuaciones.tex`
+2. Escribir:
+
+   * Una ecuación en línea
+   * Una ecuación centrada
+   * Una ecuación numerada con referencia
+   * Una ecuación con fracción y raíz
+3. Compilar el documento
+
+---
+
+## Resultado esperado
+
+El estudiante será capaz de:
+
+* Escribir ecuaciones correctamente
+* Diferenciar tipos de ecuaciones
+* Referenciar ecuaciones
+* Usar símbolos matemáticos básicos
