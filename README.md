@@ -19,4 +19,3 @@ Con la extensión LaTeX Workshop, VS Code se convierte en un IDE potente que per
 
 ## Estructura del curso
 Cada carpeta corresponde a una sesión del curso.
-
