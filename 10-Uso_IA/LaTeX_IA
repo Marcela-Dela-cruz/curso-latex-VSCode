@@ -1,0 +1,137 @@
+# LaTeX e Inteligencia Artificial
+## Uso responsable y productivo
+
+---
+
+## Objetivo
+
+Que el estudiante aprenda a:
+
+- Utilizar herramientas de IA como apoyo en LaTeX
+- Mejorar productividad sin perder criterio técnico
+- Aplicar buenas prácticas académicas
+
+---
+
+# Idea central
+
+La Inteligencia Artificial no reemplaza el conocimiento.
+
+Es una herramienta de apoyo.
+
+El profesional decide.  
+La IA asiste.
+
+---
+
+# ¿Cómo puede ayudar la IA en LaTeX?
+
+La IA puede:
+
+- Generar plantillas base
+- Corregir errores de compilación
+- Explicar mensajes de error
+- Convertir texto a formato LaTeX
+- Generar tablas y ecuaciones
+- Formatear bibliografías en BibTeX
+
+---
+
+# Ejemplos de uso
+
+## Generar estructura inicial
+
+Prompt ejemplo:
+
+> "Genera una plantilla LaTeX para un reporte técnico con portada y tabla de contenido"
+
+---
+
+## Corregir errores
+
+Copiar mensaje de error y preguntar:
+
+> "¿Por qué aparece este error en LaTeX?"
+
+---
+
+## Convertir ecuaciones
+
+Escribir en lenguaje natural:
+
+> "Ecuación de energía cinética"
+
+La IA puede generar:
+
+```latex
+E = \frac{1}{2}mv^2
+```
+
+---
+
+# Ventajas
+
+- Ahorra tiempo
+- Reduce frustración inicial
+- Mejora comprensión técnica
+- Permite enfocarse en el contenido
+
+---
+
+# Riesgos
+
+- Copiar sin entender
+- Generar código incorrecto
+- Perder criterio académico
+- Dependencia excesiva
+
+---
+
+# Buenas prácticas
+
+- Revisar siempre el código generado
+- Compilar y verificar resultados
+- No usar IA para ocultar plagio
+- Usarla como asistente, no como sustituto
+
+---
+
+# Ética académica
+
+La IA debe utilizarse como:
+
+- Herramienta de apoyo
+- Medio de aprendizaje
+- Asistente técnico
+
+Nunca como reemplazo del pensamiento crítico.
+
+---
+
+# Actividad práctica
+
+1. Pedir a una IA que genere una tabla en LaTeX
+2. Revisar el código
+3. Compilar y corregir errores
+4. Explicar qué hace cada línea
+
+---
+
+# Resultado esperado
+
+El estudiante será capaz de:
+
+- Integrar IA en su flujo de trabajo
+- Evaluar críticamente el código generado
+- Mantener estándares académicos
+- Trabajar de forma más eficiente y profesional
+
+---
+
+# Conclusión
+
+LaTeX forma la base técnica.
+
+La IA potencia la productividad.
+
+El criterio profesional sigue siendo humano.
