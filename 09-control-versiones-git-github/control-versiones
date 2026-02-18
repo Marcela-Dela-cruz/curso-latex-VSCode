@@ -1,0 +1,211 @@
+# Control de Versiones con Git y GitHub
+
+## Objetivo de la sesión
+
+Que el estudiante aprenda a utilizar Git y GitHub para gestionar versiones de proyectos en LaTeX de manera profesional.
+
+---
+
+## Idea central
+
+Un proyecto académico o de ingeniería **no debe depender de una sola copia local**.
+
+Git permite:
+
+- Controlar cambios
+- Recuperar versiones anteriores
+- Trabajar en equipo
+- Respaldar en la nube
+
+GitHub permite alojar el repositorio en línea.
+
+---
+
+# 1. ¿Qué es Git?
+
+Git es un sistema de control de versiones distribuido que permite registrar cambios en archivos a lo largo del tiempo.
+
+Cada cambio guardado se llama:
+
+> Commit
+
+---
+
+# 2. ¿Qué es GitHub?
+
+GitHub es una plataforma que aloja repositorios Git en la nube.
+
+Permite:
+
+- Colaboración
+- Historial de cambios
+- Trabajo en equipo
+- Portafolio profesional
+
+---
+
+# 3. Flujo básico de trabajo
+
+El flujo estándar en un proyecto LaTeX es:
+
+1. Editar archivos
+2. Compilar y verificar PDF
+3. Guardar cambios con Git
+4. Subir cambios a GitHub
+
+---
+
+# 4. Inicializar un repositorio
+
+Desde la carpeta raíz del proyecto:
+
+```bash
+git init
+```
+
+Agregar todos los archivos:
+
+```bash
+git add .
+```
+
+Crear el primer commit:
+
+```bash
+git commit -m "Primer commit del curso LaTeX"
+```
+
+---
+
+# 5. Conectar con GitHub
+
+Crear un repositorio vacío en GitHub.
+
+Luego conectar el repositorio local:
+
+```bash
+git remote add origin https://github.com/usuario/nombre-repositorio.git
+git branch -M main
+git push -u origin main
+```
+
+---
+
+# 6. Flujo diario recomendado
+
+Cada vez que realices cambios importantes:
+
+```bash
+git add .
+git commit -m "Descripción clara del cambio realizado"
+git push
+```
+
+Ejemplos de buenos mensajes de commit:
+
+- "Se agregó sección de ecuaciones diferenciales"
+- "Corrección de errores en referencias"
+- "Se añadió longtable para datos experimentales"
+
+Evitar mensajes como:
+
+- "Cambios"
+- "Update"
+- "Arreglos"
+
+---
+
+# 7. Archivo .gitignore para LaTeX
+
+LaTeX genera muchos archivos auxiliares que no deben subirse a GitHub.
+
+Crear un archivo llamado:
+
+```
+.gitignore
+```
+
+Contenido recomendado:
+
+```bash
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+```
+
+Esto mantiene el repositorio limpio y profesional.
+
+---
+
+# 8. Buenas prácticas en proyectos académicos
+
+- No subir PDFs finales innecesarios
+- No subir archivos auxiliares
+- Hacer commits frecuentes
+- Usar mensajes descriptivos
+- Mantener estructura clara de carpetas
+
+---
+
+# 9. Estructura profesional del curso
+
+Un proyecto académico bien organizado puede verse así:
+
+```
+01-Introduccion
+02-Instalacion
+03-vscode
+04-estructura-documento
+05-texto-y-formato
+06-Figuras-y-tablas
+07-ecuaciones
+08-referencias
+09-control-versiones-git-github
+recursos
+README.md
+.gitignore
+```
+
+Esto refleja un flujo profesional de trabajo técnico.
+
+---
+
+# Actividad práctica
+
+1. Inicializar un repositorio en el curso
+2. Crear el archivo `.gitignore`
+3. Hacer el primer commit
+4. Crear un repositorio en GitHub
+5. Subir el proyecto
+6. Realizar un segundo commit agregando una mejora al curso
+
+---
+
+# Resultado esperado
+
+El estudiante será capaz de:
+
+- Inicializar un repositorio Git
+- Realizar commits correctamente
+- Subir proyectos a GitHub
+- Mantener limpio un repositorio LaTeX
+- Aplicar buenas prácticas profesionales
+
+---
+
+## Conclusión
+
+LaTeX enseña a escribir documentos técnicos.
+
+Git y GitHub enseñan a trabajar como un profesional de la ingeniería.
