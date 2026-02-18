@@ -1,4 +1,5 @@
-# ¿Qué es LaTeX?
+## ¿Qué es LaTeX?
+
 
 ## Objetivo de la sesión
 
@@ -70,6 +71,8 @@ Además, LaTeX es una herramienta **gratuita**, multiplataforma y ampliamente ut
 * "No sirve para textos largos" ❌
 
 LaTeX puede usarse para documentos simples o complejos, y una vez dominadas las bases, se vuelve una herramienta muy poderosa.
+
+
 
 
 

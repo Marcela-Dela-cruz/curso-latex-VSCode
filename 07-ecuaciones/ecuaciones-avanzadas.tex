@@ -1,0 +1,138 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+
+\begin{document}
+
+\section{Ecuación General de Transporte}
+
+La ecuación general de transporte describe la conservación de una propiedad extensiva $\Phi$ asociada a una propiedad intensiva $\phi$:
+
+\begin{equation}
+\frac{\partial}{\partial t}(\rho \phi)
++
+\nabla \cdot (\rho \vec{v} \phi)
+=
+\nabla \cdot (\Gamma \nabla \phi)
++
+S_\phi
+\end{equation}
+
+donde:
+
+\begin{itemize}
+\item $\rho$ = densidad
+\item $\vec{v}$ = velocidad
+\item $\Gamma$ = coeficiente de difusión
+\item $S_\phi$ = término fuente
+\end{itemize}
+
+---
+
+\section{Forma Expandida}
+
+\begin{equation}
+\frac{\partial (\rho \phi)}{\partial t}
++
+\frac{\partial (\rho u \phi)}{\partial x}
++
+\frac{\partial (\rho v \phi)}{\partial y}
++
+\frac{\partial (\rho w \phi)}{\partial z}
+=
+\frac{\partial}{\partial x}
+\left(
+\Gamma \frac{\partial \phi}{\partial x}
+\right)
++
+\frac{\partial}{\partial y}
+\left(
+\Gamma \frac{\partial \phi}{\partial y}
+\right)
++
+\frac{\partial}{\partial z}
+\left(
+\Gamma \frac{\partial \phi}{\partial z}
+\right)
++
+S_\phi
+\end{equation}
+
+---
+
+\section{Casos Particulares}
+
+\subsection{1. Conservación de masa}
+
+Si $\phi = 1$:
+
+\begin{equation}
+\frac{\partial \rho}{\partial t}
++
+\nabla \cdot (\rho \vec{v})
+=
+0
+\end{equation}
+
+---
+
+\subsection{2. Conservación de cantidad de movimiento}
+
+Si $\phi = \vec{v}$:
+
+\begin{equation}
+\rho
+\left(
+\frac{\partial \vec{v}}{\partial t}
++
+\vec{v} \cdot \nabla \vec{v}
+\right)
+=
+- \nabla P
++
+\mu \nabla^2 \vec{v}
++
+\rho \vec{g}
+\end{equation}
+
+(Navier-Stokes)
+
+---
+
+\subsection{3. Conservación de energía}
+
+Si $\phi = h$ (entalpía):
+
+\begin{equation}
+\rho
+\left(
+\frac{\partial h}{\partial t}
++
+\vec{v} \cdot \nabla h
+\right)
+=
+k \nabla^2 T
++
+\dot{q}
+\end{equation}
+
+---
+
+\subsection{4. Balance de especie química}
+
+Si $\phi = C_A$:
+
+\begin{equation}
+\frac{\partial C_A}{\partial t}
++
+\nabla \cdot (C_A \vec{v})
+=
+D_{AB} \nabla^2 C_A
++
+r_A
+\end{equation}
+
+\end{document}

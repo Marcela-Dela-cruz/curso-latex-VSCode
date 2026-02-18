@@ -1,9 +1,8 @@
-\documentclass[12pt]{article}
-
-% Paquetes necesarios
+\documentclass{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+\usepackage{amsmath}   % Para ecuaciones avanzadas
+\usepackage{amssymb}   % Símbolos matemáticos
 
 \begin{document}
 
@@ -46,5 +45,66 @@ E &= mc^2
 \end{align}
 
 La ecuación~\ref{eq:newton} corresponde a la segunda ley de Newton.
+
+\subsection{1. Integral definida}
+
+La integral definida se expresa como:
+
+\begin{equation}
+\int_{a}^{b} f(x)\,dx = F(b) - F(a)
+\end{equation}
+
+---
+
+\subsection{ Serie de Fourier}
+
+Una función periódica puede representarse como:
+
+\begin{equation}
+f(x) = a_0 + \sum_{n=1}^{\infty} 
+\left( a_n \cos\left(\frac{2\pi n x}{L}\right) 
++ b_n \sin\left(\frac{2\pi n x}{L}\right) \right)
+\end{equation}
+
+---
+
+\subsection{ Ecuación diferencial de segundo orden}
+
+\begin{equation}
+m \frac{d^2x}{dt^2} + c \frac{dx}{dt} + kx = 0
+\end{equation}
+
+---
+
+\subsection{ Sistema de ecuaciones}
+
+\begin{equation}
+\begin{cases}
+2x + 3y = 5 \\
+4x - y = 1
+\end{cases}
+\end{equation}
+
+---
+
+\subsection{ Matriz}
+
+\begin{equation}
+A =
+\begin{pmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9
+\end{pmatrix}
+\end{equation}
+
+---
+
+\subsection{ Ecuación de Schrödinger}
+
+\begin{equation}
+i\hbar \frac{\partial}{\partial t} \Psi(x,t) =
+\left( -\frac{\hbar^2}{2m} \nabla^2 + V(x) \right)\Psi(x,t)
+\end{equation}
 
 \end{document}

@@ -22,7 +22,11 @@ En el preámbulo del documento agregar:
 \usepackage{graphicx}
 ```
 
-Para tablas básicas no se requiere paquete adicional.
+Para tablas extensas que ocupen varias páginas se utiliza el paquete `longtable`:
+
+```latex
+\usepackage{longtable}
+```
 
 ---
 
@@ -41,17 +45,17 @@ Estructura básica:
 
 Elementos importantes:
 
-* `figure` → entorno de figura
-* `[h]` → sugerencia de posición (here)
-* `\includegraphics` → inserta la imagen
-* `\caption` → título de la figura
-* `\label` → identificador para referencias
+- `figure` → entorno de figura  
+- `[h]` → sugerencia de posición  
+- `\includegraphics` → inserta la imagen  
+- `\caption` → título de la figura  
+- `\label` → identificador para referencias  
 
 ---
 
 ## 3. Ruta de las imágenes
 
-Es recomendable organizar las imágenes en una carpeta, por ejemplo:
+Es recomendable organizar las imágenes en una carpeta:
 
 ```
 imagenes/
@@ -77,7 +81,7 @@ La numeración se genera automáticamente.
 
 ---
 
-## 5. Insertar una tabla
+## 5. Insertar una tabla básica
 
 Estructura básica:
 
@@ -103,9 +107,9 @@ Estructura básica:
 
 En el entorno `tabular`:
 
-* `l` → alineado a la izquierda
-* `c` → centrado
-* `r` → alineado a la derecha
+- `l` → alineado a la izquierda  
+- `c` → centrado  
+- `r` → alineado a la derecha  
 
 Ejemplo:
 
@@ -123,22 +127,120 @@ Como se muestra en la Tabla~\ref{tab:ejemplo}, ...
 
 ---
 
+# 8. Tablas extensas con longtable
+
+## ¿Cuándo usar `longtable`?
+
+El entorno `tabular` solo permite tablas que caben en una sola página.
+
+Si la tabla es muy grande y debe continuar en la siguiente página (por ejemplo, datos experimentales extensos en Ingeniería Química), se debe usar el paquete `longtable`.
+
+---
+
+## 8.1 Diferencias entre tabular y longtable
+
+| tabular | longtable |
+|----------|------------|
+| No se divide en varias páginas | Se divide automáticamente |
+| Debe ir dentro de `table` | No necesita entorno `table` |
+| No repite encabezados | Puede repetir encabezados |
+
+---
+
+## 8.2 Estructura básica de longtable
+
+```latex
+\begin{longtable}{c c c}
+
+\caption{Ejemplo de tabla extensa} \\
+\hline
+Columna 1 & Columna 2 & Columna 3 \\
+\hline
+\endfirsthead
+
+\hline
+Columna 1 & Columna 2 & Columna 3 \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Dato 1 & 10 & 20 \\
+Dato 2 & 15 & 30 \\
+Dato 3 & 18 & 40 \\
+Dato 4 & 22 & 50 \\
+% Agregar muchos más datos aquí
+
+\end{longtable}
+```
+
+---
+
+## 8.3 Explicación de las partes especiales
+
+- `\endfirsthead` → Encabezado de la primera página  
+- `\endhead` → Encabezado que se repite en páginas siguientes  
+- `\endfoot` → Pie intermedio  
+- `\endlastfoot` → Pie final  
+
+Esto permite que la tabla sea profesional y legible aunque tenga varias páginas.
+
+---
+
+## 8.4 Ejemplo aplicado (Ingeniería Química)
+
+```latex
+\section{Datos experimentales de reactor}
+
+\begin{longtable}{c c c c}
+
+\caption{Conversión en un reactor CSTR no isotérmico} \\
+\hline
+Tiempo (min) & Temperatura (K) & Concentración (mol/L) & Conversión \\
+\hline
+\endfirsthead
+
+\hline
+Tiempo (min) & Temperatura (K) & Concentración (mol/L) & Conversión \\
+\hline
+\endhead
+
+0  & 350 & 2.0 & 0.00 \\
+5  & 355 & 1.8 & 0.10 \\
+10 & 360 & 1.6 & 0.20 \\
+15 & 368 & 1.3 & 0.35 \\
+20 & 375 & 1.0 & 0.50 \\
+25 & 383 & 0.7 & 0.65 \\
+30 & 390 & 0.4 & 0.80 \\
+35 & 398 & 0.2 & 0.90 \\
+
+\end{longtable}
+```
+
+---
+
 ## Errores comunes
 
-* Olvidar el paquete `graphicx`
-* No usar `\caption`
-* Escribir referencias manuales
-* Colocar imágenes fuera del entorno `figure`
+- Olvidar el paquete `graphicx`  
+- No usar `\caption`  
+- Escribir referencias manuales  
+- Colocar imágenes fuera del entorno `figure`  
+- Intentar poner `longtable` dentro de `table`  
 
 ---
 
 ## Actividad práctica
 
-1. Crear una carpeta llamada `imagenes`
-2. Agregar una imagen cualquiera
-3. Insertar una figura con título y referencia
-4. Crear una tabla con al menos 3 columnas
-5. Referenciar la tabla y la figura en el texto
+1. Crear una carpeta llamada `imagenes`  
+2. Agregar una imagen cualquiera  
+3. Insertar una figura con título y referencia  
+4. Crear una tabla con al menos 3 columnas  
+5. Crear una tabla extensa con `longtable`  
+6. Referenciar la tabla y la figura en el texto  
 
 ---
 
@@ -146,7 +248,8 @@ Como se muestra en la Tabla~\ref{tab:ejemplo}, ...
 
 El estudiante será capaz de:
 
-* Insertar figuras correctamente
-* Crear tablas básicas
-* Referenciar figuras y tablas
-* Comprender el concepto de elementos flotantes
+- Insertar figuras correctamente  
+- Crear tablas básicas  
+- Crear tablas extensas que ocupen varias páginas  
+- Referenciar figuras y tablas  
+- Comprender el concepto de elementos flotantes  

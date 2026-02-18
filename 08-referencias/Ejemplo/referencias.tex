@@ -1,36 +1,22 @@
-\documentclass[12pt]{article}
-
-% Idioma y codificación
+\documentclass{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
-
-% Márgenes y formato
-\usepackage[a4paper, margin=2.5cm]{geometry}
-
-% Paquete para referencias
-\usepackage{cite}
+\usepackage{natbib} % <-- Agregamos este paquete
 
 \begin{document}
 
-\title{Ejemplo completo de referencias en \LaTeX}
-\author{Nombre del autor}
-\date{\today}
-\maketitle
+\section{Ejemplo de referencias}
 
-\section{Introducción}
+Este es un ejemplo de cita narrativa.
+Como explica \citet{lamport1994}, LaTeX es un sistema de alta calidad tipográfica.
 
-LaTeX es ampliamente utilizado para la redacción de documentos académicos.
-Según \cite{lamport1994}, este sistema facilita la separación entre contenido
-y formato. Además, estudios posteriores \cite{knuth1984} muestran su
-robustez para documentos científicos.
+También podemos hacer una cita entre paréntesis \citep{knuth1984}.
 
 \section{Conclusión}
+Existen diferentes estilos de citación en LaTeX.
 
-El uso de BibTeX permite manejar referencias de forma automática,
-ordenada y profesional.
-
-% --- Bibliografía ---
-\bibliographystyle{plain}
+\bibliographystyle{apalike} % <-- Cambiamos el estilo
 \bibliography{referencias}
 
 \end{document}
+
