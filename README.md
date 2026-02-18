@@ -1,21 +1,73 @@
-# Curso básico de LaTeX con VS Code
+📚 Curso de LaTeX con Visual Studio Code
 
+Curso introductorio diseñado para académicos y técnicos que desean combinar la alta calidad tipográfica de LaTeX con la potencia, personalización y velocidad de Visual Studio Code.
 
-<<<<<<< HEAD
-# Curso básico de LaTeX con VS Code
+Este enfoque supera a editores tradicionales o limitados a la nube, permitiendo un entorno de trabajo profesional, flexible y escalable.
 
+🚀 ¿Qué aprenderás?
 
-=======
->>>>>>> 54ff2102e3a81959e6bf780630b540118e55a2d3
-Curso introductorio crucial para académicos y técnicos porque combina la alta calidad tipográfica de LaTeX con la potencia, personalización y velocidad de un editor moderno, superando a editores tradicionales o limitados a la nube. La extensión LaTeX Workshop ofrece autocompletado, previsualización PDF en tiempo real, gestión de bibliografía y manejo de fórmulas complejas en un entorno integrado. 
+Configurar un entorno profesional de LaTeX
 
-Con la extensión LaTeX Workshop, VS Code se convierte en un IDE potente que permite editar, compilar (usando herramientas como MiKTeX o TeX Live) y previsualizar documentos sin cambiar de ventana, tambien, facilita la navegación por la estructura del documento y muestra una vista previa del PDF en tiempo real, lo que agiliza la corrección de errores.Ayuda a la gestión de proyectos complejos, siendo ideal para tesis o artículos científicos, permitiendo gestionar múltiples archivos .tex, figuras y referencias bibliográficas automáticamente.
+Usar VS Code como un IDE completo para documentos científicos
 
+Gestionar proyectos grandes (tesis, artículos, informes técnicos)
 
-## Requisitos
-- Instalar una distribución de LaTeX (TeX Live, MiKTeX).
-- Instalar VS Code.
-- Instalar la extensión LaTeX Workshop desde el Marketplace de VS Code. 
+Trabajar con múltiples archivos .tex
 
-## Estructura del curso
-Cada carpeta corresponde a una sesión del curso.
+Insertar figuras, tablas y ecuaciones complejas
+
+Gestionar bibliografía automáticamente
+
+🧩 ¿Por qué usar LaTeX Workshop?
+
+La extensión LaTeX Workshop convierte VS Code en un entorno de desarrollo completo para LaTeX, ofreciendo:
+
+✅ Autocompletado inteligente
+
+✅ Previsualización de PDF en tiempo real
+
+✅ Compilación automática
+
+✅ Navegación estructural del documento
+
+✅ Gestión de referencias bibliográficas
+
+✅ Soporte para proyectos complejos
+
+Permite editar, compilar (con TeX Live o MiKTeX) y previsualizar sin cambiar de ventana, agilizando el flujo de trabajo y la corrección de errores.
+
+📌 Requisitos
+
+Antes de comenzar, necesitas:
+
+Instalar una distribución de LaTeX:
+
+TeX Live
+
+MiKTeX
+
+Instalar Visual Studio Code
+
+Instalar la extensión LaTeX Workshop desde el Marketplace de VS Code
+
+📂 Estructura del curso
+
+Cada carpeta del repositorio corresponde a una sesión del curso.
+
+Ejemplo:
+
+01-introduccion/
+02-estructura-documento/
+03-figuras-tablas/
+04-bibliografia/
+...
+
+🎯 Público objetivo
+
+Estudiantes universitarios
+
+Docentes e investigadores
+
+Profesionales técnicos
+
+Personas que estén escribiendo tesis o artículos científicos
